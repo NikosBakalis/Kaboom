@@ -16,13 +16,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        buttonLiakozzz.findViewById(R.id.buttonLiakozzz);
-        buttonXristou.findViewById(R.id.buttonXristou);
-        buttonNikolas.findViewById(R.id.buttonNikolas);
+        buttonLiakozzz = (Button) findViewById(R.id.buttonLiakozzz);
+        buttonXristou = (Button) findViewById(R.id.buttonXristou);
+        buttonNikolas = (Button) findViewById(R.id.buttonNikolas);
     }
 
     public void gotoLiakozzzSoundBoard(View view) {
         Intent intent = new Intent(MainActivity.this, LiakozzzSoundBoard.class);
+        startActivity(intent);
+    }
+
+    public void gotoXristouSoundBoard(View view) {
+        Intent intent = new Intent(MainActivity.this, XristouSoundBoard.class);
+        startActivity(intent);
+    }
+
+    public void gotoNikolasSoundBoard(View view) {
+        Intent intent = new Intent(MainActivity.this, NikolasSoundBoard.class);
         startActivity(intent);
     }
 }
