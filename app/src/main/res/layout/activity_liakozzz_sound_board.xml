@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".LiakozzzSoundBoard">
+
+<Button
+    android:id="@+id/buttonUuuuSound"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/UUUUU"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/buttonMonosSouSound"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/buttonMonosSouSound"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/MonosSou"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/buttonKalaEsuSound"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/KalaEsu"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/buttonMonosSouSound"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/buttonEBebaiaSound"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Ebebaia"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/buttonBoulwneSound"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/buttonUuuuSound" />
+
+<Button
+    android:id="@+id/buttonBoulwneSound"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Boulwne"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/buttonMonosSouSound" />
+
+<Button
+    android:id="@+id/buttonReAlitiSound"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/ReAliti"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/buttonBoulwneSound"
+    app:layout_constraintTop_toBottomOf="@+id/buttonKalaEsuSound" />
+</androidx.constraintlayout.widget.ConstraintLayout>
